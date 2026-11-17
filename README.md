@@ -52,7 +52,44 @@ Buka terminal atau Command Prompt pada direktori folder tempat file proyek ini b
 Ketik perintah berikut untuk mengkompilasi file *source code* (misalnya `main.c`) menjadi file *executable*:
 ```bash
 gcc main.c -o program_kantin
-
+```
 ---
 
-## Penjelasan
+## Dokumentasi Pengujian Program (Skenario Test)
+
+Berikut adalah bukti tangkapan layar (*screenshot*) dari skenario pengujian program yang telah divalidasi sesuai ketentuan tugas:
+
+### 1. Tambah Produk Baru
+* **Tindakan:** Memilih menu 2 dan memasukkan data produk baru[cite: 3].
+* **Hasil:** Produk berhasil ditambahkan dan muncul di daftar produk[cite: 3].
+* ![Skenario 1 - Tambah Produk](screenshots/tambah_produk.png)
+
+### 2. Transaksi Penjualan Beberapa Produk
+* **Tindakan:** Melakukan transaksi pembelian lebih dari satu jenis produk (Menu 4)[cite: 2, 3].
+* **Hasil:** Subtotal per item dan total keseluruhan dihitung secara akurat[cite: 3].
+* ![Skenario 2 - Transaksi Penjualan](screenshots/transaksi.png)
+
+### 3. Pembaruan Stok & Jumlah Terjual
+* **Tindakan:** Menyelesaikan transaksi pembayaran[cite: 3].
+* **Hasil:** Stok produk berkurang otomatis dan jumlah terjual bertambah[cite: 3].
+* ![Skenario 3 - Pembaruan Stok](screenshots/pembaruan_stok.png)
+
+### 4. Penolakan Pembelian Melebihi Stok
+* **Tindakan:** Membeli produk dengan jumlah yang melebihi stok tersedia[cite: 3].
+* **Hasil:** Transaksi ditolak oleh sistem dan stok awal tetap aman[cite: 3].
+* ![Skenario 4 - Stok Tidak Cukup](screenshots/stok_tidak_cukup.png)
+
+### 5. Laporan Penjualan & Produk Terlaris
+* **Tindakan:** Membuka menu laporan penjualan (Menu 8)[cite: 2, 3].
+* **Hasil:** Menampilkan rincian unit terjual, total pendapatan, dan produk terlaris[cite: 3].
+* ![Skenario 5 - Laporan Penjualan](screenshots/laporan.png)
+
+### 6. Pengurutan Produk (Sorting)
+* **Tindakan:** Mengurutkan produk berdasarkan harga termurah atau penjualan terbanyak[cite: 2, 3].
+* **Hasil:** Data produk tersusun rapi sesuai kriteria pengurutan[cite: 3].
+* ![Skenario 6 - Pengurutan Produk](screenshots/pengurutan.png)
+
+### 7. Pencarian & Cek Stok Menipis
+* **Tindakan:** Mencari produk via nama dan mengecek stok di bawah 5 (Menu 6 & 9)[cite: 2, 3].
+* **Hasil:** Menampilkan hasil pencarian yang akurat serta peringatan stok menipis[cite: 3].
+* ![Skenario 7 - Pencarian dan Stok Menipis](screenshots/pencarian_stok.png)
