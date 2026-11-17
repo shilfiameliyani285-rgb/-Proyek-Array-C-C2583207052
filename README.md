@@ -51,17 +51,11 @@ Buka terminal atau Command Prompt pada direktori folder tempat file proyek ini b
 ### 2. Proses Kompilasi (Compile)
 Ketik perintah berikut untuk mengkompilasi file *source code* (misalnya `main.c`) menjadi file *executable*:
 ```bash
-gcc main.c -o program_kantin
-
+ gcc main.c -o program_kantin
 
 
 1. Tambah Produk
+<img width="1916" height="1020" alt="Screenshot 2026-11-17 210308" src="https://github.com/user-attachments/assets/44d2aeb3-02ce-4b44-bb2f-5f34449746ea" />
 
-<img width="1917" height="1016" alt="Tambah Produk" src="https://github.com/user-attachments/assets/7598b8f2-c3b1-4522-8cd7-30c22ca418b1" />
 
-<img width="1916" height="1020" alt="Screenshot 2026-11-17 210308" src="https://github.com/user-attachments/assets/b5dbba11-28aa-49b8-ae8c-447b82a39dbd" />
-
-<img width="1917" height="500" alt="Screenshot 2026-11-17 210344" src="https://github.com/user-attachments/assets/321e6789-72a2-48a9-9f80-869cad32bcd9" />
-
-Berdasarkan program Sistem Monitoring Stok & Penjualan Kantin yang ditampilkan, pengerjaan dimulai dengan memilih menu nomor 2, yaitu "Tambah Produk". Proses ini diawali dengan menambahkan menu Ayam Penyet dengan memasukkan nama produk "Ayam Penyet", menetapkan harga sebesar Rp15.000, serta mengisi stok awal sebanyak 40, yang kemudian disusul dengan pesan sukses bahwa produk berhasil ditambahkan. Langkah serupa juga dilakukan untuk memasukkan produk-produk lainnya secara berurutan, mulai dari Es Lemon Tea (harga Rp10.000, stok 20), Thai Tea (harga Rp12.000, stok 23), Sate Ayam (harga Rp25.000, stok 12), hingga Sate Maranggi (harga Rp60.000, stok 10). Setelah seluruh item menu dan data stok awal tersebut selesai diinput melalui opsi tambah produk, pengguna dapat kembali melihat keseluruhan daftar produk yang telah tersimpan di dalam sistem kantin.
 
