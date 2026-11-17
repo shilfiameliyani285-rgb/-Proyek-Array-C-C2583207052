@@ -65,36 +65,44 @@ Berikut adalah bukti tangkapan layar (*screenshot*) dari skenario pengujian prog
 * <img width="1917" height="1016" alt="Tambah Produk" src="https://github.com/user-attachments/assets/85b4b0ca-83da-4623-8034-092b302e6c98" />
 * <img width="1916" height="1020" alt="Screenshot 2026-11-17 210308" src="https://github.com/user-attachments/assets/8e7f968e-56b2-4d9d-a436-d9838f39f5e4" />
 * <img width="1917" height="500" alt="Screenshot 2026-11-17 210344" src="https://github.com/user-attachments/assets/4f7d922f-04a1-49f0-bdb3-e620433697df" />
-* Berdasarkan program Sistem Monitoring Stok & Penjualan Kantin yang ditampilkan, pengerjaan dimulai dengan memilih menu nomor 2, yaitu "Tambah Produk". Proses ini diawali dengan menambahkan menu Ayam Penyet dengan memasukkan nama produk "Ayam Penyet", menetapkan harga sebesar Rp15.000, serta mengisi stok awal sebanyak 40, yang kemudian disusul dengan pesan sukses bahwa produk berhasil ditambahkan. Langkah serupa juga dilakukan untuk memasukkan produk-produk lainnya secara berurutan, mulai dari Es Lemon Tea (harga Rp10.000, stok 20), Thai Tea (harga Rp12.000, stok 23), Sate Ayam (harga Rp25.000, stok 12), hingga Sate Maranggi (harga Rp60.000, stok 10). Setelah seluruh item menu dan data stok awal tersebut selesai diinput melalui opsi tambah produk, pengguna dapat kembali melihat keseluruhan daftar produk yang telah tersimpan di dalam sistem kantin.
+* Proses ini diawali dengan menambahkan menu "Ayam Penyet", dengan harga sebesar Rp15.000, serta stok awal sebanyak 40, kemudian Es Lemon Tea (harga Rp10.000, stok 20), Thai Tea (harga Rp12.000, stok 23), Sate Ayam (harga Rp25.000, stok 12), hingga Sate Maranggi (harga Rp60.000, stok 10). Setelah seluruh item menu dan data stok awal tersebut selesai diinput melalui opsi tambah produk, pengguna dapat kembali melihat keseluruhan daftar produk yang telah tersimpan di dalam sistem kantin.
 
 ### 2. Transaksi Penjualan Beberapa Produk
 * **Tindakan:** Melakukan transaksi pembelian lebih dari satu jenis produk (Menu 4).
 * **Hasil:** Subtotal per item dan total keseluruhan dihitung secara akurat.
 * <img width="1917" height="1011" alt="Screenshot 2026-11-17 210403" src="https://github.com/user-attachments/assets/3bf403aa-cef0-4425-a91c-e2c13499d54b" />
-* 
-
+* <img width="1917" height="362" alt="Screenshot 2026-11-17 210523" src="https://github.com/user-attachments/assets/c331ed01-6828-46ec-a88a-121901e4181a" />
+* Pada bagian input transaksi, pengguna memasukkan jumlah jenis produk yang ingin dibeli, yaitu sebanyak 3 jenis. Pembelian pertama (Item ke-1) memilih nomor produk 5 (Ayam Geprek) dengan jumlah beli sebanyak 2 porsi. Pembelian kedua (Item ke-2) memilih nomor produk 9 (Sate Maranggi) sebanyak 1 porsi. Pembelian ketiga (Item ke-3) memilih nomor produk 7 (Es Lemon Tea) sebanyak 5 porsi. Setelah semua item dimasukkan, sistem otomatis mencetak Struk Transaksi yang merinci rincian belanjaan—yakni Ayam Geprek (2 x Rp16.000 = Rp32.000), Sate Maranggi (1 x Rp60.000 = Rp60.000), dan Es Lemon Tea (5 x Rp10.000 = Rp50.000)—dengan total keseluruhan pembayaran sebesar Rp142.000, diakhiri dengan pesan sukses bahwa transaksi selesai dan stok produk telah berhasil diperbarui.
 
 ### 3. Pembaruan Stok & Jumlah Terjual
-* **Tindakan:** Menyelesaikan transaksi pembayaran[cite: 3].
-* **Hasil:** Stok produk berkurang otomatis dan jumlah terjual bertambah[cite: 3].
-* ![Skenario 3 - Pembaruan Stok](screenshots/pembaruan_stok.png)
+* **Tindakan:** Menyelesaikan transaksi pembayaran.
+* **Hasil:** Stok produk berkurang otomatis dan jumlah terjual bertambah.
+* <img width="1917" height="778" alt="Screenshot 2026-11-17 210545" src="https://github.com/user-attachments/assets/8b17f448-1248-48a4-9f19-109a0549f873" />
+* Pengguna memilih menu 5 (Tambah Stok), lalu memasukkan nomor produk 2 (Mie Ayam) dengan jumlah tambahan stok sebanyak 8 unit. Sistem kemudian berhasil memperbarui stok Mie Ayam dari 3 unit menjadi 11 unit.
 
 ### 4. Penolakan Pembelian Melebihi Stok
-* **Tindakan:** Membeli produk dengan jumlah yang melebihi stok tersedia[cite: 3].
-* **Hasil:** Transaksi ditolak oleh sistem dan stok awal tetap aman[cite: 3].
-* ![Skenario 4 - Stok Tidak Cukup](screenshots/stok_tidak_cukup.png)
+* **Tindakan:** Membeli produk dengan jumlah yang melebihi stok tersedia.
+* **Hasil:** Transaksi ditolak oleh sistem dan stok awal tetap aman.
+* <img width="1917" height="925" alt="Screenshot 2026-11-17 210609" src="https://github.com/user-attachments/assets/698fd53c-2a77-4707-b0ca-b9d5f7709642" />
+* Untuk membeli 1 jenis produk, yaitu nomor 2 (Mie Ayam) sebanyak 15 unit. Karena stok Mie Ayam yang tersedia hanya 11 unit, sistem menolak transaksi dengan pesan [ERROR] Transaksi ditolak! Stok 'Mie Ayam' tidak cukup (Tersedia: 11) sehingga transaksi dibatalkan.
 
 ### 5. Laporan Penjualan & Produk Terlaris
-* **Tindakan:** Membuka menu laporan penjualan (Menu 8)[cite: 2, 3].
-* **Hasil:** Menampilkan rincian unit terjual, total pendapatan, dan produk terlaris[cite: 3].
-* ![Skenario 5 - Laporan Penjualan](screenshots/laporan.png)
+* **Tindakan:** Membuka menu laporan penjualan (Menu 8).
+* **Hasil:** Menampilkan rincian unit terjual, total pendapatan, dan produk terlaris.
+* <img width="1917" height="781" alt="Screenshot 2026-11-17 210630" src="https://github.com/user-attachments/assets/931b0ad5-8e67-49d2-9ad6-cd001602572a" />
+* Untuk melihat rekapitulasi penjualan kantin. Berdasarkan laporan tersebut, tercatat produk yang laku terjual adalah Ayam Geprek (2 unit), Es Lemon Tea (5 unit), dan Sate Maranggi (1 unit), dengan total keseluruhan unit terjual sebanyak 8 unit, total pendapatan sebesar Rp142.000, serta produk terlaris yaitu Es Lemon Tea dengan 5 unit terjual.
 
 ### 6. Pengurutan Produk (Sorting)
-* **Tindakan:** Mengurutkan produk berdasarkan harga termurah atau penjualan terbanyak[cite: 2, 3].
-* **Hasil:** Data produk tersusun rapi sesuai kriteria pengurutan[cite: 3].
-* ![Skenario 6 - Pengurutan Produk](screenshots/pengurutan.png)
+* **Tindakan:** Mengurutkan produk berdasarkan harga termurah atau penjualan terbanyak.
+* **Hasil:** Data produk tersusun rapi sesuai kriteria pengurutan.
+* <img width="1917" height="830" alt="Screenshot 2026-11-17 210653" src="https://github.com/user-attachments/assets/bc0b4640-e4fb-4297-b8fb-0633fe00d7b0" />
+* Pengguna memilih menu 7 (Urutkan Produk), lalu memasukkan pilihan pengurutan nomor 1 (Harga Termurah ke Termahal / Ascending). Sistem berhasil mengurutkan data dan menampilkan daftar produk secara berurutan mulai dari harga terendah (Air Mineral Rp2.500) hingga harga tertinggi (Sate Maranggi Rp60.000).
 
 ### 7. Pencarian & Cek Stok Menipis
-* **Tindakan:** Mencari produk via nama dan mengecek stok di bawah 5 (Menu 6 & 9)[cite: 2, 3].
-* **Hasil:** Menampilkan hasil pencarian yang akurat serta peringatan stok menipis[cite: 3].
-* ![Skenario 7 - Pencarian dan Stok Menipis](screenshots/pencarian_stok.png)
+* **Tindakan:** Mencari produk via nama dan mengecek stok di bawah 5 (Menu 6 & 9).
+* **Hasil:** Menampilkan hasil pencarian yang akurat serta peringatan stok menipis.
+* <img width="1917" height="550" alt="Screenshot 2026-11-17 231122" src="https://github.com/user-attachments/assets/2e86c273-da35-4998-b4fc-d37571b159f5" />
+* Pengguna memilih menu 6 lalu mengetik kata kunci nama produk "Ayam Penyet". Sistem kemudian menampilkan hasil pencarian berupa detail produk Ayam Penyet dengan harga Rp15.000, stok 40, dan jumlah terjual 0.
+* <img width="1917" height="446" alt="Screenshot 2026-11-17 231157" src="https://github.com/user-attachments/assets/f52d81ed-0fd3-454e-b248-20e5afb273bd" />
+* Pada tangkapan layar berikutnya, pengguna memilih menu 9 untuk memeriksa produk dengan stok yang hampir habis (di bawah 5). Sistem menampilkan peringatan stok menipis dan mendeteksi produk Air Mineral yang tersisa 4 unit saja.
+
