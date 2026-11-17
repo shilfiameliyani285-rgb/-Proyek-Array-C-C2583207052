@@ -5,7 +5,7 @@ Repositori ini dibuat untuk memenuhi tugas proyek praktikum mata kuliah **Algori
 
 ---
 
-## 📌 Identitas Pembuat
+## Identitas Pembuat
 * **Nama Lengkap:** Shilfia Meliyani
 * **NIM:** C2583207052
 * **Kelas:** PTI-3A
@@ -13,12 +13,12 @@ Repositori ini dibuat untuk memenuhi tugas proyek praktikum mata kuliah **Algori
 * **Nama Proyek:** Sistem Pemantauan Stok dan Penjualan Kantin Kampus
 ---
 
-## 📝 Deskripsi Singkat Proyek
+## Deskripsi Singkat Proyek
 Kantin kampus sebelumnya mencatat stok dan transaksi secara manual, sehingga menyulitkan pengelola dalam memantau ketersediaan barang, menghitung transaksi, dan mengetahui produk terlaris. Aplikasi berbasis *console* (terminal) ini dirancang untuk mengatasi masalah tersebut secara otomatis dengan memanfaatkan array satu dimensi dan array karakter dua dimensi. Program dapat berjalan dengan kapasitas maksimal 50 produk serta dilengkapi minimal 5 data produk awal.
 
 ---
 
-## ⚙️ Daftar Fitur Program
+## Daftar Fitur Program
 Menu utama yang tersedia di dalam aplikasi ini meliputi:
 1. **Lihat Daftar Produk:** Menampilkan informasi nama, harga, dan stok seluruh produk.
 2. **Tambah Produk:** Menambahkan produk baru ke dalam sistem.
@@ -33,7 +33,7 @@ Menu utama yang tersedia di dalam aplikasi ini meliputi:
 
 ---
 
-## 💻 Penjelasan Penggunaan Array dalam Program
+## Penjelasan Penggunaan Array dalam Program
 Di dalam program bahasa C ini, **array** digunakan sebagai struktur data utama penyimpanan memori selama program berjalan:
 * **Array Karakter Dua Dimensi (`char nama[50][50]`):** Digunakan untuk menyimpan daftar nama produk secara baris dan kolom (string array) dengan kapasitas maksimal 50 produk.
 * **Array Satu Dimensi (`int harga[50]`, `int stok[50]`, `int terjual[50]`):** Digunakan secara paralel untuk menyimpan data harga satuan, sisa stok, serta akumulasi jumlah unit yang terjual untuk masing-masing indeks produk.
@@ -41,7 +41,7 @@ Di dalam program bahasa C ini, **array** digunakan sebagai struktur data utama p
 
 ---
 
-## 🚀 Petunjuk Kompilasi dan Menjalankan Program
+## Petunjuk Kompilasi dan Menjalankan Program
 
 Pastikan komputer atau laptop kamu sudah terpasang compiler bahasa C (seperti `gcc` melalui MinGW atau GCC bawaan Linux/macOS).
 
@@ -50,18 +50,9 @@ Buka terminal atau Command Prompt pada direktori folder tempat file proyek ini b
 
 ### 2. Proses Kompilasi (Compile)
 Ketik perintah berikut untuk mengkompilasi file *source code* (misalnya `main.c`) menjadi file *executable*:
-```bash gcc main.c -o program_kantin
+```bash
+gcc main.c -o program_kantin
 
-Cara Menjalankan Program
-Menggunakan GCC
+---
 
-Pastikan GCC sudah terpasang.
-Buka terminal pada folder proyek.
-Kompilasi program dengan perintah: gcc main.c -o kantin
-Jalankan program:
-Windows: kantin.exe
-Linux/macOS: ./kantin Menggunakan IDE Buka file main.c melalui IDE C seperti Code: :Blocks atau Dev-C++, lalu lakukan proses Build/Compile dan Run. Dokumentasi Pengujian Pengujian berikut didokumentasikan berdasarkan hasil program yang dijalankan. Tangkapan layar menampilkan proses dan keluaran aktual.
-
-
-
-
+## Petunjuk Kompilasi dan Menjalankan Program
