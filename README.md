@@ -51,11 +51,18 @@ Buka terminal atau Command Prompt pada direktori folder tempat file proyek ini b
 ### 2. Proses Kompilasi (Compile)
 Ketik perintah berikut untuk mengkompilasi file *source code* (misalnya `main.c`) menjadi file *executable*:
 ```bash
- gcc main.c -o program_kantin
+gcc main.c -o program_kantin
 
+Cara Menjalankan Program
+Menggunakan GCC
 
-1. Tambah Produk
-<img width="1916" height="1020" alt="Screenshot 2026-11-17 210308" src="https://github.com/user-attachments/assets/44d2aeb3-02ce-4b44-bb2f-5f34449746ea" />
+Pastikan GCC sudah terpasang.
+Buka terminal pada folder proyek.
+Kompilasi program dengan perintah: gcc main.c -o kantin
+Jalankan program:
+Windows: kantin.exe
+Linux/macOS: ./kantin Menggunakan IDE Buka file main.c melalui IDE C seperti Code: :Blocks atau Dev-C++, lalu lakukan proses Build/Compile dan Run. Dokumentasi Pengujian Pengujian berikut didokumentasikan berdasarkan hasil program yang dijalankan. Tangkapan layar menampilkan proses dan keluaran aktual.
+
 
 
 
