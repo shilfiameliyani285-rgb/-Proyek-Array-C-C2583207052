@@ -60,7 +60,7 @@ gcc main.c -o program_kantin
 Berikut adalah bukti tangkapan layar (*screenshot*) dari skenario pengujian program yang telah divalidasi sesuai ketentuan tugas:
 
 ### 1. Tambah Produk Baru
-* **Tindakan:** Memilih menu 2 dan memasukkan data produk baru[cite: 3].
+* **Tindakan:** Memilih menu 2 dan memasukkan data produk baru.
 * **Hasil:** Produk berhasil ditambahkan dan muncul di daftar produk[cite: 3].
 * ![Skenario 1 - Tambah Produk](screenshots/tambah_produk.png)
 
