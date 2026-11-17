@@ -1,4 +1,4 @@
-# -Proyek-Array-C-C2583207052
+# Proyek-Array-C-C2583207052
 # Proyek Array C - Sistem Monitoring Stok dan Penjualan Kantin Kampus
 
 Repositori ini dibuat untuk memenuhi tugas proyek praktikum mata kuliah **Algoritma dan Pemrograman Lanjutan**. Program ini mengimplementasikan struktur data **array** dalam bahasa C untuk mengelola data produk, transaksi penjualan, pencarian, pengurutan, serta laporan keuangan kantin kampus.
