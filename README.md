@@ -50,8 +50,7 @@ Buka terminal atau Command Prompt pada direktori folder tempat file proyek ini b
 
 ### 2. Proses Kompilasi (Compile)
 Ketik perintah berikut untuk mengkompilasi file *source code* (misalnya `main.c`) menjadi file *executable*:
-```bash
-gcc main.c -o program_kantin
+```bash gcc main.c -o program_kantin
 
 Cara Menjalankan Program
 Menggunakan GCC
