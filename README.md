@@ -55,4 +55,4 @@ gcc main.c -o program_kantin
 
 ---
 
-## Petunjuk Kompilasi dan Menjalankan Program
+## Penjelasan
