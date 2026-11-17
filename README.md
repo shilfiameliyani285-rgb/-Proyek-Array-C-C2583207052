@@ -67,11 +67,12 @@ Berikut adalah bukti tangkapan layar (*screenshot*) dari skenario pengujian prog
 * <img width="1917" height="500" alt="Screenshot 2026-11-17 210344" src="https://github.com/user-attachments/assets/4f7d922f-04a1-49f0-bdb3-e620433697df" />
 * Berdasarkan program Sistem Monitoring Stok & Penjualan Kantin yang ditampilkan, pengerjaan dimulai dengan memilih menu nomor 2, yaitu "Tambah Produk". Proses ini diawali dengan menambahkan menu Ayam Penyet dengan memasukkan nama produk "Ayam Penyet", menetapkan harga sebesar Rp15.000, serta mengisi stok awal sebanyak 40, yang kemudian disusul dengan pesan sukses bahwa produk berhasil ditambahkan. Langkah serupa juga dilakukan untuk memasukkan produk-produk lainnya secara berurutan, mulai dari Es Lemon Tea (harga Rp10.000, stok 20), Thai Tea (harga Rp12.000, stok 23), Sate Ayam (harga Rp25.000, stok 12), hingga Sate Maranggi (harga Rp60.000, stok 10). Setelah seluruh item menu dan data stok awal tersebut selesai diinput melalui opsi tambah produk, pengguna dapat kembali melihat keseluruhan daftar produk yang telah tersimpan di dalam sistem kantin.
 
-
 ### 2. Transaksi Penjualan Beberapa Produk
-* **Tindakan:** Melakukan transaksi pembelian lebih dari satu jenis produk (Menu 4)[cite: 2, 3].
-* **Hasil:** Subtotal per item dan total keseluruhan dihitung secara akurat[cite: 3].
-* ![Skenario 2 - Transaksi Penjualan](screenshots/transaksi.png)
+* **Tindakan:** Melakukan transaksi pembelian lebih dari satu jenis produk (Menu 4).
+* **Hasil:** Subtotal per item dan total keseluruhan dihitung secara akurat.
+* <img width="1917" height="1011" alt="Screenshot 2026-11-17 210403" src="https://github.com/user-attachments/assets/3bf403aa-cef0-4425-a91c-e2c13499d54b" />
+* 
+
 
 ### 3. Pembaruan Stok & Jumlah Terjual
 * **Tindakan:** Menyelesaikan transaksi pembayaran[cite: 3].
